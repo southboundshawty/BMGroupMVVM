@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:BMGroupMVVM.Resources.Assets">
+    <BitmapImage x:Key="JohnBookImage" UriSource="\Resources\Assets\Images\John.jpg"/>
+    <BitmapImage x:Key="CrlBookImage" UriSource="\Resources\Assets\Images\Clr.jpg"/>
+    <BitmapImage x:Key="JavaKettleBookImage" UriSource="\Resources\Assets\Images\Java.jpg"/>
+    <BitmapImage x:Key="Java8BookImage" UriSource="\Resources\Assets\Images\Java8.jpg"/>
+    <BitmapImage x:Key="JavaBegginersBookImage" UriSource="\Resources\Assets\Images\JavaBegginers.jpg"/>
+    <BitmapImage x:Key="PythonBookImage" UriSource="\Resources\Assets\Images\Python.jpg"/>
+    <BitmapImage x:Key="Python2BookImage" UriSource="\Resources\Assets\Images\Python2.jpg"/>
+    <BitmapImage x:Key="Python3BookImage" UriSource="\Resources\Assets\Images\Python3.jpg"/>
+</ResourceDictionary>

@@ -1,0 +1,38 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:BMGroupMVVM.Components"
+                    xmlns:components="clr-namespace:BMGroupMVVM.Components">
+    <Style x:Key="MyCustomStyleButton" TargetType="Button">
+        <Setter Property="Background" Value="LightCyan"/>
+        <Setter Property="Foreground" Value="DarkCyan"/>
+        <Setter Property="FontSize" Value="9pt"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="BorderBrush" Value="DarkCyan"/>
+    </Style>
+
+    <Style TargetType="components:TextBoxWithPlaceholder">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="components:TextBoxWithPlaceholder">
+                    <Border>
+                        <Grid>
+                            <TextBox x:Name="tb" Text="{Binding FilterText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Padding="4"/>
+                            <TextBlock IsHitTestVisible="False" Text="{TemplateBinding PlaceHolder}" Foreground="LightGray" Padding="7 4 4 4">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Setter Property="Visibility" Value="Collapsed"/>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=tb}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

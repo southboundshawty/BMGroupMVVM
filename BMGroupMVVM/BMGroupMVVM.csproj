@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Assets\Images\Clr.jpg" />
+    <None Remove="Resources\Assets\Images\Java.jpg" />
+    <None Remove="Resources\Assets\Images\Java8.jpg" />
+    <None Remove="Resources\Assets\Images\JavaBegginers.jpg" />
+    <None Remove="Resources\Assets\Images\John.jpg" />
+    <None Remove="Resources\Assets\Images\Python.jpg" />
+    <None Remove="Resources\Assets\Images\Python2.jpg" />
+    <None Remove="Resources\Assets\Images\Python3.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Assets\Images\Clr.jpg" />
+    <Resource Include="Resources\Assets\Images\Java.jpg" />
+    <Resource Include="Resources\Assets\Images\Java8.jpg" />
+    <Resource Include="Resources\Assets\Images\JavaBegginers.jpg" />
+    <Resource Include="Resources\Assets\Images\John.jpg" />
+    <Resource Include="Resources\Assets\Images\Python.jpg" />
+    <Resource Include="Resources\Assets\Images\Python2.jpg" />
+    <Resource Include="Resources\Assets\Images\Python3.jpg" />
+  </ItemGroup>
+
+</Project>
